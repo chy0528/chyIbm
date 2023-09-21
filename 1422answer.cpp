@@ -1,11 +1,11 @@
-#include "bits/stdc++.h"
+#include <iostream>
 using namespace std;
-typedef pair<int , int>P;//pair½«Á½¸öintºÏÎªÒ»¸öÊı¾İ²¢ÇÒÓÃtypedef½«pairĞÂµÄÊı¾İÀàĞÍ´´½¨ĞÂÃû×ÖP
+typedef pair<int , int>P;//pairå°†ä¸¤ä¸ªintåˆä¸ºä¸€ä¸ªæ•°æ®å¹¶ä¸”ç”¨typedefå°†pairæ–°çš„æ•°æ®ç±»å‹åˆ›å»ºæ–°åå­—P
 P arr[ 1005 ];
-bool cmp ( P a , P b )//sortº¯ÊıµÄ×Ô¶¨ÒåÅÅĞò
+bool cmp ( P a , P b )//sortå‡½æ•°çš„è‡ªå®šä¹‰æ’åº
 {
-    if( a.second == b.second ) return a.first > b.first;//Èç¹û½áÊøÊ±¼äÏàµÈ¾Í°´¿ªÊ¼Ê±¼ä´Ó´óµ½Ğ¡ÅÅĞò£¨¸üÈİÒ×¿ìÒ»µãÕÒµ½·ûºÏÌõ¼şµÄ£©
-    return a.second < b.second;//½áÊøÊ±¼ä²»ÏàµÈ¾Í°´½áÊøÊ±¼ä´ÓĞ¡µ½´óÅÅÁĞ
+    if( a.second == b.second ) return a.first > b.first;//å¦‚æœç»“æŸæ—¶é—´ç›¸ç­‰å°±æŒ‰å¼€å§‹æ—¶é—´ä»å¤§åˆ°å°æ’åºï¼ˆæ›´å®¹æ˜“å¿«ä¸€ç‚¹æ‰¾åˆ°ç¬¦åˆæ¡ä»¶çš„ï¼‰
+    return a.second < b.second;//ç»“æŸæ—¶é—´ä¸ç›¸ç­‰å°±æŒ‰ç»“æŸæ—¶é—´ä»å°åˆ°å¤§æ’åˆ—
 }
 
 int main ( )
